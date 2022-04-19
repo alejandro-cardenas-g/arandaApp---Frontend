@@ -1,0 +1,159 @@
+.login{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem 0;
+}
+
+.login__container{
+    width: 90%;
+}
+
+.login__imagen{
+    display: block;
+    width: 18rem;
+}
+
+.login__box{
+    width: 100%;
+    background-color: lighten($color: $color1, $amount: 0);
+    color: white;
+}
+
+.form{
+    width: 100%;
+    padding: 2rem;
+}
+
+.login__titulo{
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 3rem;
+}
+
+.form__control{
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label{
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.form__input{
+    padding: 1rem 1.2rem;
+    font-size: 1.45rem;
+}
+
+.form__button{
+    margin-top: 1.3rem;
+    padding: 1rem 1.5rem;
+    border: unset;
+    font-weight: 700;
+    width: 100%;
+    background-color: white;
+    color: $color1;
+    transition: background-color 0.3s;
+
+    &:hover{
+
+        background-color: rgba(255,255,255,0.8);
+        color: white;
+
+    }
+
+}
+
+.form__error{
+    background-color: rgba(255,255,255,0.8);
+    padding: 1rem 1.2rem;
+    border:unset;
+    width: 60%;
+    margin: 0 auto;
+    color: red;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transform: display ease 0.5s;
+}
+
+.form__error--none{
+    display: none;
+}
+
+@media (min-width: 238px){
+    .login__imagen{
+        display: block;
+        width: 22rem;
+    }
+}
+
+@media (min-width: 460px){
+
+    .login__imagen{
+        width: 32rem;
+    }
+
+    .form__control--button{
+        align-items: center;
+    }
+
+    .form__button{
+        max-width: 70%;
+    }
+
+    .form__input{
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 620px){
+
+    .login__container{
+        width: 70%;
+    }
+
+    .form__control{
+        max-width: 50rem;
+    }
+
+}
+
+@media (min-width: 1020px){
+
+    .login{
+        flex-direction: row;
+    }
+
+    .login__imagen{
+        width: 42rem;
+    }
+
+    .form{
+        padding: 2rem 3rem;
+    }
+
+    .login__container{
+        width: 40%;
+    }
+
+    .form__control{
+        max-width: 50rem;
+    }
+
+    .form__button{
+        max-width: 32rem;
+    }
+
+    .login__titulo{
+        font-size: 4rem;
+    }
+
+}

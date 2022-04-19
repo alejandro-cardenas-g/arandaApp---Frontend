@@ -1,0 +1,73 @@
+.form-l{
+    padding: 1rem;
+}
+
+.form-l__control{
+    display: flex;
+    flex-direction:column;
+}
+
+.form-s__control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-l__label{
+    margin: 1rem 0;
+}
+
+.l__input{
+    padding: 0.2rem;
+}
+
+.dark-bg{
+    background-color: $color2;
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.div-close{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div--close-atc{
+    align-items: center;
+}
+
+.closeButton{
+    display: block;
+    color: red;
+    cursor: pointer;
+}
+
+.save--button-icon{
+    background-color: green;
+    color: white;
+    border: unset;
+    cursor: pointer;
+    font-size: 2.5rem;
+    width: 70%;
+    max-width: 7rem;
+}
+
+@media(min-width: 768px){
+    .form-s__control{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.form__select{
+    width: 98%;
+    max-width: 26rem;
+}

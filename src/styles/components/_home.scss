@@ -1,0 +1,25 @@
+.home__title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 200;
+    padding-bottom: 1rem;
+}
+
+.home__title--span{
+    font-family: $font1;
+    color: $color1;
+    font-weight: 400;
+}
+
+.home__parrafo{
+    text-align: justify;
+}
+
+@media (min-width: 420px){
+    .home__title{
+        font-size: 3rem;
+
+    }
+}

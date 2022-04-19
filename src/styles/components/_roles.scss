@@ -1,0 +1,37 @@
+.roles__titulo{
+    font-family: $font1;
+    color: $color2;
+    font-weight:200;
+    border-bottom: 1px solid $color2;
+    padding-bottom: 1rem;
+}
+
+.rol-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid $color2;
+}
+
+.rol-card__titulo{
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 1rem;
+    font-weight: 700;
+    color: $color2
+}
+
+@media (min-width: 420px){
+    .rol-card__titulo{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px){
+    .rol-card{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
